@@ -1,0 +1,1577 @@
+@font-face {
+  font-family: 'Ubuntu-Bold';
+  font-weight: 700;
+  src: url('Ubuntu-Bold.ttf');
+}
+@font-face {
+  font-family: 'Ubuntu-Medium';
+  font-weight: 500;
+  src: url('Ubuntu-Medium.ttf');
+}
+@font-face {
+  font-family: 'Ubuntu-Light';
+  font-weight: 400;
+  src: url('Ubuntu-Light.ttf');
+}
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(250, 241, 241, 0.377);
+  height: 800px;
+}
+.app {
+  position: relative;
+  background-color: white;
+  height: 43rem;
+  top: 50px;
+
+  box-shadow: 5px 15px 50px 5px rgba(0, 0, 0, 0.055);
+  border-radius: 10px;
+  width: 40rem;
+  left: 23rem;
+  justify-items: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+.container:nth-child(1) {
+  display: flex;
+  position: relative;
+  font-size: 20px;
+  left: 20px;
+  font-family: 'Ubuntu-Bold';
+  font-weight: 700;
+}
+.note {
+  position: relative;
+
+  margin: 0px;
+  color: white;
+  top: 0px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 1px 10px 1px 10px;
+  border-radius: 4px;
+  background-color: rgb(10, 46, 114);
+}
+.mark {
+  left: 500px;
+  top: 10px;
+  color: rgba(0, 0, 0, 0.801);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Ubuntu-Light';
+  position: absolute;
+}
+.mark- {
+  display: flex;
+  font-size: 16px;
+  position: relative;
+  top: 1rem;
+  right: 0rem;
+  margin: 0px;
+  height: 55px;
+  border-radius: 8px;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(236, 243, 248);
+  width: 37rem;
+}
+.avatar {
+  height: 40px;
+  position: relative;
+  left: 20px;
+}
+.comment {
+  position: relative;
+  left: 50px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Ubuntu-Light';
+}
+.comment::before {
+  content: 'MArk Webber';
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Ubuntu-Medium';
+}
+.comment::after {
+  content: ' My first tournament today!';
+  font-weight: 500;
+  position: relative;
+  color: rgba(0, 0, 0, 0.788);
+  left: 10px;
+  font-family: 'Ubuntu-Medium';
+  font-size: 15px;
+}
+.comments {
+  position: relative;
+  left: 50px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Ubuntu-Light';
+}
+.comments::before {
+  content: 'Angela Gray';
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Ubuntu-Medium';
+}
+.followed {
+  position: relative;
+  left: 50px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Ubuntu-Light';
+}
+.followed::before {
+  content: 'Jacob Thompson';
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Ubuntu-Medium';
+}
+.followed::after {
+  content: 'Chess Club';
+  color: rgb(3, 38, 102);
+  left: 10px;
+  position: relative;
+  font-weight: 500;
+  font-family: 'Ubuntu-Medium';
+}
+
+.ago {
+  position: relative;
+  top: 15px;
+  font-size: 10px;
+  right: 25.7rem;
+  font-weight: 400;
+  font-family: 'Ubuntu-Light';
+}
+.time {
+  position: relative;
+  top: 15px;
+  font-size: 10px;
+  right: 7.8rem;
+  font-weight: 400;
+  font-family: 'Ubuntu-Light';
+}
+.fa-circle {
+  position: relative;
+  left: 65px;
+  color: red;
+  top: 2px;
+  font-size: 7px;
+}
+.icon {
+  position: relative;
+  left: 55px;
+  color: red;
+  top: 2px;
+  font-size: 7px;
+}
+.club {
+  position: relative;
+  top: 15px;
+  font-size: 10px;
+  right: 17.2rem;
+  font-weight: 400;
+  font-family: 'Ubuntu-Light';
+}
+.Gray- {
+  display: flex;
+  font-size: 16px;
+  position: relative;
+  top: 2rem;
+  right: 0rem;
+  margin: 0px;
+  height: 55px;
+  border-radius: 8px;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(236, 243, 248);
+  width: 37rem;
+}
+.jacob- {
+  display: flex;
+  font-size: 16px;
+  position: relative;
+  top: 3rem;
+  right: 0rem;
+  margin: 0px;
+  height: 55px;
+  border-radius: 8px;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(236, 243, 248);
+  width: 37rem;
+}
+.Rich {
+  display: flex;
+  font-size: 16px;
+  position: relative;
+  top: 4rem;
+  right: 0rem;
+  margin: 0px;
+  height: 55px;
+  border-radius: 8px;
+  justify-items: center;
+  align-items: center;
+  width: 37rem;
+}
+.follow::before {
+  content: 'Rizky Hasanuddln';
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Ubuntu-Medium';
+}
+.follow {
+  position: relative;
+  left: 50px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Ubuntu-Light';
+}
+.days {
+  position: relative;
+  top: 15px;
+  font-size: 10px;
+  right: 15rem;
+  font-weight: 400;
+  font-family: 'Ubuntu-Light';
+}
+.member {
+  position: relative;
+  display: grid;
+  top: 4rem;
+  border-radius: 5px;
+  left: 5.7rem;
+  justify-items: center;
+  align-items: center;
+  width: 500px;
+  border: 1px solid rgba(3, 3, 3, 0.288);
+}
+.member p {
+  position: relative;
+  display: grid;
+  grid-template-columns: 450px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Ubuntu-Light';
+}
+.web {
+  display: flex;
+  font-size: 16px;
+  position: relative;
+  top: 5rem;
+  right: 0rem;
+  margin: 0px;
+  height: 55px;
+  border-radius: 8px;
+  justify-items: center;
+  align-items: center;
+  width: 37rem;
+}
+.commented::before {
+  content: 'Kimberly Smith';
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Ubuntu-Medium';
+}
+.commented {
+  position: relative;
+  left: 50px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Ubuntu-Light';
+}
+.week {
+  position: relative;
+  top: 15px;
+  font-size: 10px;
+  right: 14.3rem;
+  font-weight: 400;
+  font-family: 'Ubuntu-Light';
+}
+.chess {
+  position: relative;
+  height: 30px;
+  left: 12rem;
+  top: 1rem;
+}
+.mark_ {
+  display: flex;
+  font-size: 16px;
+  position: relative;
+  top: 6rem;
+  right: 0rem;
+  margin: 0px;
+  height: 55px;
+  border-radius: 8px;
+  justify-items: center;
+  align-items: center;
+  width: 37rem;
+}
+.come {
+  position: relative;
+  word-break: normal;
+  left: 50px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Ubuntu-Light';
+}
+.come::before {
+  content: 'Nathan Peterson';
+  font-size: 16px;
+  top: 0px;
+  font-weight: 500;
+  font-family: 'Ubuntu-Medium';
+}
+.come::after {
+  content: ' 5 end-game strategles to increase your win rate ';
+  color: rgb(10, 10, 10);
+  left: 0px;
+
+  columns: 5px;
+  position: relative;
+  font-size: 13px;
+  justify-content: center;
+  font-weight: 400;
+  font-family: 'Ubuntu-Medium';
+}
+.weeks {
+  position: relative;
+  top: 25px;
+  font-size: 10px;
+  right: 24rem;
+  font-weight: 400;
+  font-family: 'Ubuntu-Light';
+}
+
+.weeks::after {
+  content: '2 week ago';
+  font-weight: 400;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.692);
+  top: 1px;
+  grid-template-columns: 110px;
+  font-family: 'Ubuntu-Medium';
+  position: relative;
+  display: grid;
+  right: 7px;
+}
+.jacob_ {
+  display: flex;
+  font-size: 16px;
+  position: relative;
+  top: 7rem;
+  right: 0rem;
+  margin: 0px;
+  height: 55px;
+  border-radius: 8px;
+  justify-items: center;
+  align-items: center;
+  width: 37rem;
+}
+.group {
+  position: relative;
+  left: 50px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Ubuntu-Light';
+}
+.group::before {
+  content: 'Anna Kim';
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Ubuntu-Medium';
+}
+.group::after {
+  content: 'Chess Club';
+  color: rgb(3, 38, 102);
+  left: 10px;
+  position: relative;
+  font-weight: 500;
+  font-family: 'Ubuntu-Medium';
+}
+.alls {
+  position: relative;
+  right: 20rem;
+  left: 0px;
+}
+.left {
+  position: relative;
+  top: 15px;
+  font-size: 10px;
+  right: 10.6rem;
+  font-weight: 400;
+  font-family: 'Ubuntu-Light';
+}
+@media only screen and (min-width: 375px) {
+  body {
+    background-color: white;
+    width: auto;
+  }
+  .app {
+    background-color: none;
+    border: none;
+    left: 0rem;
+    top: 20px;
+    width: 340px;
+    position: relative;
+    box-shadow: none;
+  }
+  .container{
+    width: auto;
+  }
+  .container:nth-child(1) {
+    right: 50rem;
+  }
+  .mark {
+    left: 230px;
+    top: 10px;
+  }
+  .mark- {
+    height: 80px;
+    width: 320px;
+  }
+  .comment {
+    left: 25px;
+  }
+  .comment::after {
+    left: 0px;
+  }
+  .ago {
+    position: relative;
+    right: 13.8rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 35px;
+    top: 25px;
+  }
+  .avatar {
+    left: 10px;
+  }
+  .fa-circle {
+    left: 7px;
+    top: 10px;
+  }
+  .Gray- {
+    width: 320px;
+  }
+  .comments {
+    left: 25px;
+  }
+  .time {
+    right: 9rem;
+  }
+  .icon {
+    left: 32px;
+    top: 3px;
+  }
+  .jacob- {
+    width: 320px;
+    height: 80px;
+  }
+  .followed {
+    left: 30px;
+  }
+  .alls {
+    display: none;
+    position: relative;
+    left: 0px;
+    right: 24rem;
+    margin: 0px;
+    padding: 0px;
+  }
+  .club {
+    right: 12.5rem;
+    display: grid;
+    grid-template-columns: 50px;
+    position: relative;
+    top: 1.5rem;
+  }
+  .follow{
+    left: 30px;
+  }
+  .days{
+    top: 25px;
+    display: grid;
+    right: 10.5rem;
+    grid-template-columns: 100px;
+  }
+  .member{
+    top: 80px;
+    left: 4.4rem;
+    width: 250px;
+    height: 110px;
+  }
+  .circle{
+    margin: 5px;
+    position: relative;
+    vertical-align: top;
+    right: 3rem;
+  }
+  .member p{
+    display: grid;
+    grid-template-columns: 200px;
+  }
+  .web{
+    top: 6rem;
+    width: auto;
+    display: flex;
+  }
+  .commented{
+    left: 30px;
+  }
+  .week{
+    top: 32px;
+    right: 7.5rem;
+    display: grid;
+    grid-template-columns: 120px;
+  }
+  .chess{
+    position: relative;
+    right: 100px;
+    left: 0rem;
+    height: 10px;
+    right: 20rem;
+    display: none;
+    
+  }
+  .webp{
+    position: relative;
+    height: 20px;
+    right: 4.5rem;
+  }
+  .ches{
+    height: 30px;
+  }
+  .mark_{
+    top: 8rem;
+  }
+  .jacob_{
+    top: 9rem;
+    justify-items: center;
+    align-items: center;
+  }
+  .come{
+    left: 30px;
+  }
+  .weeks::after {
+    content: '2 weeks ago';
+    font-weight: 400;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.692);
+    top: 0rem;
+    grid-template-columns: 60px;
+    font-family: 'Ubuntu-Medium';
+    position: relative;
+    display: grid;
+    right: 30px;
+  }
+  .weeks {
+    position: relative;
+    top: 30px;
+    font-size: 10px;
+    display: block;
+    right: 11.2rem;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .group{
+    left: 30px;
+  }
+  .left{
+    right: 12rem;
+  }
+}
+@media only screen and (min-width: 453px) {
+  body {
+    background-color: white;
+    width: auto;
+  }
+  .app {
+    background-color: none;
+    border: none;
+    left: 1rem;
+    top: 20px;
+    width: 400px;
+    position: relative;
+    box-shadow: none;
+  }
+  .container{
+    width: auto;
+  }
+  .container:nth-child(1) {
+    right: 50rem;
+  }
+  .mark {
+    left: 270px;
+    top: 10px;
+  }
+  .mark- {
+    height: 80px;
+    width: 380px;
+  }
+  .comment {
+    left: 25px;
+  }
+  .comment::after {
+    left: 0px;
+  }
+  .ago {
+    position: relative;
+    right: 17.5rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 35px;
+    top: 25px;
+  }
+  .avatar {
+    left: 10px;
+  }
+  .fa-circle {
+    left: 7px;
+    top: 10px;
+  }
+  .Gray- {
+    width: 380px;
+  }
+  .comments {
+    left: 25px;
+  }
+  .time {
+    right: 8.8rem;
+  }
+  .icon {
+    left: 32px;
+    top: 3px;
+  }
+  .jacob- {
+    width: 380px;
+    height: 80px;
+  }
+  .followed {
+    left: 30px;
+    
+  }
+  .alls {
+    display: none;
+    position: relative;
+    left: 0px;
+    right: 24rem;
+    margin: 0px;
+    padding: 0px;
+  }
+  .club {
+    right: 16.3rem;
+    display: grid;
+    grid-template-columns: 50px;
+    position: relative;
+    top: 1.5rem;
+  }
+  .follow{
+    left: 30px;
+  }
+  .days{
+    top: 25px;
+    display: grid;
+    right: 14.5rem;
+    grid-template-columns: 100px;
+  }
+  .member{
+    top: 80px;
+    left: 4.4rem;
+    width: 250px;
+    height: 110px;
+  }
+  .circle{
+    margin: 5px;
+    position: relative;
+    vertical-align: top;
+    right: 3rem;
+  }
+  .member p{
+    display: grid;
+    grid-template-columns: 200px;
+  }
+  .web{
+    top: 6rem;
+    width: auto;
+    display: flex;
+  }
+  .commented{
+    left: 30px;
+  }
+  .week{
+    top: 25px;
+    right: 11.2rem;
+    display: grid;
+    grid-template-columns: 120px;
+  }
+  .chess{
+    position: relative;
+    right: 100px;
+    left: 0rem;
+    height: 10px;
+    right: 20rem;
+    display: none;
+    
+  }
+  .webp{
+    position: relative;
+    height: 20px;
+    right: 4rem;
+  }
+  .ches{
+    height: 30px;
+  }
+  .mark_{
+    top: 8rem;
+  }
+  .jacob_{
+    top: 9rem;
+    justify-items: center;
+    align-items: center;
+  }
+  .come{
+    left: 30px;
+  }
+  .weeks::after {
+    content: '2 weeks ago';
+    font-weight: 400;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.692);
+    top: 0rem;
+    grid-template-columns: 100px;
+    font-family: 'Ubuntu-Medium';
+    position: relative;
+    display: grid;
+    right: 50px;
+  }
+  .weeks {
+    position: relative;
+    top: 30px;
+    font-size: 10px;
+    display: block;
+    right: 11.2rem;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .group{
+    left: 30px;
+  }
+  .left{
+    right: 12rem;
+  }
+}
+@media only screen and (min-width: 1024px){
+    body{
+        width: auto;
+    }
+    .app {
+    position: relative;
+    background-color: white;
+    height: 41rem;
+    top: 50px;
+    box-shadow: 5px 15px 50px 5px rgba(0, 0, 0, 0.055);
+    border-radius: 10px;
+    width: 40rem;
+    left: 23rem;
+    justify-items: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  .container:nth-child(1) {
+    display: flex;
+    position: relative;
+    font-size: 20px;
+    left: 20px;
+    font-family: 'Ubuntu-Bold';
+    font-weight: 700;
+  }
+  .note {
+    position: relative;
+    margin: 0px;
+    color: white;
+    top: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 1px 10px 1px 10px;
+    border-radius: 4px;
+    background-color: rgb(10, 46, 114);
+  }
+  .mark {
+    left: 500px;
+    top: 10px;
+    color: rgba(0, 0, 0, 0.753);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+    position: absolute;
+  }
+  .mark- {
+    display: flex;
+    font-size: 16px;
+    position: relative;
+    top: 1rem;
+    right: 0rem;
+    margin: 0px;
+    height: 55px;
+    border-radius: 8px;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(236, 243, 248);
+    width: 37rem;
+  }
+  .avatar {
+    height: 40px;
+    position: relative;
+    left: 20px;
+  }
+  .comment {
+    position: relative;
+    left: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .comment::before {
+    content: 'MArk Webber';
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Ubuntu-Medium';
+  }
+  .comment::after {
+    content: ' My first tournament today!';
+    font-weight: 500;
+    position: relative;
+    color: rgba(0, 0, 0, 0.788);
+    left: 10px;
+    font-family: 'Ubuntu-Medium';
+    font-size: 15px;
+  }
+  .comments {
+    position: relative;
+    left: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .comments::before {
+    content: 'Angela Gray';
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Ubuntu-Medium';
+  }
+  .followed {
+    position: relative;
+    left: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .followed::before {
+    content: 'Jacob Thompson';
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Ubuntu-Medium';
+  }
+  .followed::after {
+    content: 'Chess Club';
+    color: rgb(3, 38, 102);
+    left: 10px;
+    position: relative;
+    font-weight: 500;
+    font-family: 'Ubuntu-Medium';
+  }
+
+  .ago {
+    position: relative;
+    top: 15px;
+    font-size: 10px;
+    right: 25.7rem;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .time {
+    position: relative;
+    top: 15px;
+    font-size: 10px;
+    right: 7.8rem;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .fa-circle {
+    position: relative;
+    left: 65px;
+    color: red;
+    top: 2px;
+    font-size: 7px;
+  }
+  .icon {
+    position: relative;
+    left: 55px;
+    color: red;
+    top: 2px;
+    font-size: 7px;
+  }
+  .club {
+    position: relative;
+    top: 15px;
+    font-size: 10px;
+    right: 17.1rem;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .circle{
+    display: none;
+    position: relative;
+    top: 0px;
+  }
+  .alls{
+    display: block;
+    top: 2px;
+  }
+  .Gray- {
+    display: flex;
+    font-size: 16px;
+    position: relative;
+    top: 2rem;
+    right: 0rem;
+    margin: 0px;
+    height: 55px;
+    border-radius: 8px;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(236, 243, 248);
+    width: 37rem;
+  }
+  .jacob- {
+    display: flex;
+    font-size: 16px;
+    position: relative;
+    top: 3rem;
+    right: 0rem;
+    margin: 0px;
+    height: 55px;
+    border-radius: 8px;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(236, 243, 248);
+    width: 37rem;
+  }
+  .Rich {
+    display: flex;
+    font-size: 16px;
+    position: relative;
+    top: 4rem;
+    right: 0rem;
+    margin: 0px;
+    height: 55px;
+    border-radius: 8px;
+    justify-items: center;
+    align-items: center;
+    width: 37rem;
+  }
+  .follow::before {
+    content: 'Rizky Hasanuddln';
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Ubuntu-Medium';
+  }
+  .follow {
+    position: relative;
+    left: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .days {
+    position: relative;
+    top: 15px;
+    font-size: 10px;
+    right: 15rem;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .member {
+    position: relative;
+    display: grid;
+    top: 4rem;
+    height: 75px;
+    border-radius: 5px;
+    left: 5.7rem;
+    justify-items: center;
+    align-items: center;
+    width: 500px;
+    border: 1px solid rgba(3, 3, 3, 0.288);
+  }
+  .member p {
+    position: relative;
+    display: grid;
+    grid-template-columns: 450px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Ubuntu-Light';
+  }
+  .web {
+    display: flex;
+    font-size: 16px;
+    position: relative;
+    top: 5rem;
+    right: 0rem;
+    margin: 0px;
+    height: 55px;
+    border-radius: 8px;
+    justify-items: center;
+    align-items: center;
+    width: 37rem;
+  }
+  .commented::before {
+    content: 'Kimberly Smith';
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Ubuntu-Medium';
+  }
+  .webp{
+    left: 130px;
+  }
+  .commented {
+    position: relative;
+    left: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .week {
+    position: relative;
+    top: 15px;
+    font-size: 10px;
+    right: 14.3rem;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .chess {
+    display: none;
+    position: relative;
+    height: 30px;
+    left: 12rem;
+    top: 1rem;
+  }
+  .mark_ {
+    display: flex;
+    font-size: 16px;
+    position: relative;
+    top: 6rem;
+    right: 0rem;
+    margin: 0px;
+    height: 55px;
+    border-radius: 8px;
+    justify-items: center;
+    align-items: center;
+    width: 37rem;
+  }
+  .come {
+    position: relative;
+    word-break: normal;
+    left: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .come::before {
+    content: 'Nathan Peterson';
+    font-size: 16px;
+    top: 0px;
+    font-weight: 500;
+    font-family: 'Ubuntu-Medium';
+  }
+  .come::after {
+    content: ' 5 end-game strategles to increase your win rate ';
+    color: rgb(10, 10, 10);
+    left: 0px;
+
+    columns: 5px;
+    position: relative;
+    font-size: 13px;
+    justify-content: center;
+    font-weight: 400;
+    font-family: 'Ubuntu-Medium';
+  }
+  .weeks {
+    position: relative;
+    top: 25px;
+    font-size: 10px;
+    right: 24rem;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+
+  .weeks::after {
+    content: '2 week ago';
+    font-weight: 400;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.692);
+    top: 1px;
+    grid-template-columns: 110px;
+    font-family: 'Ubuntu-Medium';
+    position: relative;
+    display: grid;
+    right: 7px;
+  }
+  .jacob_ {
+    display: flex;
+    font-size: 16px;
+    position: relative;
+    top: 7rem;
+    right: 0rem;
+    margin: 0px;
+    height: 55px;
+    border-radius: 8px;
+    justify-items: center;
+    align-items: center;
+    width: 37rem;
+  }
+  .group {
+    position: relative;
+    left: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .group::before {
+    content: 'Anna Kim';
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Ubuntu-Medium';
+  }
+  .group::after {
+    content: 'Chess Club';
+    color: rgb(3, 38, 102);
+    left: 10px;
+    position: relative;
+    font-weight: 500;
+    font-family: 'Ubuntu-Medium';
+  }
+  .left {
+    position: relative;
+    top: 15px;
+    font-size: 10px;
+    right: 10.6rem;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+}
+
+
+@media only screen and (min-width: 1440px) {
+  .app {
+    position: relative;
+    background-color: white;
+    height: 41rem;
+    top: 50px;
+
+    box-shadow: 5px 15px 50px 5px rgba(0, 0, 0, 0.055);
+    border-radius: 10px;
+    width: 40rem;
+    left: 23rem;
+    justify-items: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  .container:nth-child(1) {
+    display: flex;
+    position: relative;
+    font-size: 20px;
+    left: 20px;
+    font-family: 'Ubuntu-Bold';
+    font-weight: 700;
+  }
+  .note {
+    position: relative;
+    margin: 0px;
+    color: white;
+    top: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 1px 10px 1px 10px;
+    border-radius: 4px;
+    background-color: rgb(10, 46, 114);
+  }
+  .mark {
+    left: 500px;
+    top: 10px;
+    color: rgba(0, 0, 0, 0.753);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+    position: absolute;
+  }
+  .mark- {
+    display: flex;
+    font-size: 16px;
+    position: relative;
+    top: 1rem;
+    right: 0rem;
+    margin: 0px;
+    height: 55px;
+    border-radius: 8px;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(236, 243, 248);
+    width: 37rem;
+  }
+  .avatar {
+    height: 40px;
+    position: relative;
+    left: 20px;
+  }
+  .comment {
+    position: relative;
+    left: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .comment::before {
+    content: 'MArk Webber';
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Ubuntu-Medium';
+  }
+  .comment::after {
+    content: ' My first tournament today!';
+    font-weight: 500;
+    position: relative;
+    color: rgba(0, 0, 0, 0.788);
+    left: 10px;
+    font-family: 'Ubuntu-Medium';
+    font-size: 15px;
+  }
+  .comments {
+    position: relative;
+    left: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .comments::before {
+    content: 'Angela Gray';
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Ubuntu-Medium';
+  }
+  .followed {
+    position: relative;
+    left: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .followed::before {
+    content: 'Jacob Thompson';
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Ubuntu-Medium';
+  }
+  .followed::after {
+    content: 'Chess Club';
+    color: rgb(3, 38, 102);
+    left: 10px;
+    position: relative;
+    font-weight: 500;
+    font-family: 'Ubuntu-Medium';
+  }
+
+  .ago {
+    position: relative;
+    top: 15px;
+    font-size: 10px;
+    right: 25.7rem;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .time {
+    position: relative;
+    top: 15px;
+    font-size: 10px;
+    right: 7.8rem;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .fa-circle {
+    position: relative;
+    left: 65px;
+    color: red;
+    top: 2px;
+    font-size: 7px;
+  }
+  .icon {
+    position: relative;
+    left: 55px;
+    color: red;
+    top: 3px;
+    font-size: 7px;
+  }
+  .club {
+    position: relative;
+    top: 15px;
+    font-size: 10px;
+    right: 17.1rem;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .circle{
+    display: none;
+    position: relative;
+    top: 0px;
+  }
+  .alls{
+    display: block;
+    top: 2px;
+  }
+  .Gray- {
+    display: flex;
+    font-size: 16px;
+    position: relative;
+    top: 2rem;
+    right: 0rem;
+    margin: 0px;
+    height: 55px;
+    border-radius: 8px;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(236, 243, 248);
+    width: 37rem;
+  }
+  .jacob- {
+    display: flex;
+    font-size: 16px;
+    position: relative;
+    top: 3rem;
+    right: 0rem;
+    margin: 0px;
+    height: 55px;
+    border-radius: 8px;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(236, 243, 248);
+    width: 37rem;
+  }
+  .Rich {
+    display: flex;
+    font-size: 16px;
+    position: relative;
+    top: 4rem;
+    right: 0rem;
+    margin: 0px;
+    height: 55px;
+    border-radius: 8px;
+    justify-items: center;
+    align-items: center;
+    width: 37rem;
+  }
+  .follow::before {
+    content: 'Rizky Hasanuddln';
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Ubuntu-Medium';
+  }
+  .follow {
+    position: relative;
+    left: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .days {
+    position: relative;
+    top: 15px;
+    font-size: 10px;
+    right: 15rem;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .member {
+    position: relative;
+    display: grid;
+    top: 4rem;
+    height: 75px;
+    border-radius: 5px;
+    left: 5.7rem;
+    justify-items: center;
+    align-items: center;
+    width: 500px;
+    border: 1px solid rgba(3, 3, 3, 0.288);
+  }
+  .member p {
+    position: relative;
+    display: grid;
+    grid-template-columns: 450px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Ubuntu-Light';
+  }
+  .web {
+    display: flex;
+    font-size: 16px;
+    position: relative;
+    top: 5rem;
+    right: 0rem;
+    margin: 0px;
+    height: 55px;
+    border-radius: 8px;
+    justify-items: center;
+    align-items: center;
+    width: 37rem;
+  }
+  .commented::before {
+    content: 'Kimberly Smith';
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Ubuntu-Medium';
+  }
+  .webp{
+    left: 130px;
+  }
+  .commented {
+    position: relative;
+    left: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .week {
+    position: relative;
+    top: 15px;
+    font-size: 10px;
+    right: 14.3rem;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .chess {
+    display: none;
+    position: relative;
+    height: 30px;
+    left: 12rem;
+    top: 1rem;
+  }
+  .mark_ {
+    display: flex;
+    font-size: 16px;
+    position: relative;
+    top: 6rem;
+    right: 0rem;
+    margin: 0px;
+    height: 55px;
+    border-radius: 8px;
+    justify-items: center;
+    align-items: center;
+    width: 37rem;
+  }
+  .come {
+    position: relative;
+    word-break: normal;
+    left: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .come::before {
+    content: 'Nathan Peterson';
+    font-size: 16px;
+    top: 0px;
+    font-weight: 500;
+    font-family: 'Ubuntu-Medium';
+  }
+  .come::after {
+    content: ' 5 end-game strategles to increase your win rate ';
+    color: rgb(10, 10, 10);
+    left: 0px;
+
+    columns: 5px;
+    position: relative;
+    font-size: 13px;
+    justify-content: center;
+    font-weight: 400;
+    font-family: 'Ubuntu-Medium';
+  }
+  .weeks {
+    position: relative;
+    top: 25px;
+    font-size: 10px;
+    right: 24rem;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+
+  .weeks::after {
+    content: '2 week ago';
+    font-weight: 400;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.692);
+    top: 1px;
+    grid-template-columns: 110px;
+    font-family: 'Ubuntu-Medium';
+    position: relative;
+    display: grid;
+    right: 7px;
+  }
+  .jacob_ {
+    display: flex;
+    font-size: 16px;
+    position: relative;
+    top: 7rem;
+    right: 0rem;
+    margin: 0px;
+    height: 55px;
+    border-radius: 8px;
+    justify-items: center;
+    align-items: center;
+    width: 37rem;
+  }
+  .group {
+    position: relative;
+    left: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+  .group::before {
+    content: 'Anna Kim';
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Ubuntu-Medium';
+  }
+  .group::after {
+    content: 'Chess Club';
+    color: rgb(3, 38, 102);
+    left: 10px;
+    position: relative;
+    font-weight: 500;
+    font-family: 'Ubuntu-Medium';
+  }
+  .left {
+    position: relative;
+    top: 15px;
+    font-size: 10px;
+    right: 10.6rem;
+    font-weight: 400;
+    font-family: 'Ubuntu-Light';
+  }
+}
